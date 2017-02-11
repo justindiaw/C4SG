@@ -1,5 +1,5 @@
 <!-- Top menu -->
-<nav class="black">
+<nav class="nav-bar">
     <div class="nav-wrapper">
         <a href="" class="brand-logo"><img src="app/images/logo.png" height="60" width="380"></a>
         <ul class="right hide-on-med-and-down">
@@ -33,13 +33,12 @@
                     <li><a routerLink="/c4sgUser" routerLinkActive="active">C4SG User</a></li>
                 </ul>
             </li>   
-            
-            <li><a routerLink="/login" routerLinkActive="active" >Login</a></li>
-            <li><a routerLink="/register" routerLinkActive="active">Register</a></li>      
+            <li class="lr-wrapper" ><a routerLink="/login" routerLinkActive="active"  class="log-reg">Login</a></li>
+            <li class="lr-wrapper"><a routerLink="/register" routerLinkActive="active" class="log-reg">Register</a></li> 
+
         </ul>
     </div>
 </nav>
-
 <router-outlet></router-outlet>
 
 <!-- Footer -->
@@ -58,6 +57,8 @@
     </div>
   </div>
 </div>
+
+
  
 <div class="footer-copyright">
   <div class="container black-text">Code for Social Good</div>
